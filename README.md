@@ -1,6 +1,4 @@
-Here’s the updated `README.md` with **"InventoryMaster"** as the project name. Feel free to adjust it further based on your preferences!
 
----
 
 # **InventoryMaster**
 
