@@ -53,9 +53,10 @@ To run the program, follow these steps:
 2. **Menu Options**:
    You will be presented with the following options:
    - **1**: Add Product
-   - **2**: View Products
-   - **3**: Update Product Stock
-   - **4**: Exit
+   - **2**: Update Product Stock
+   - **3**: Delete products
+   - **4**: View Products
+   - **5**: Exit
 
    Select an option by entering the corresponding number.
 
