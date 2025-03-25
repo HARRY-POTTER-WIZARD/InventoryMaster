@@ -17,9 +17,6 @@ A simple, menu-driven Inventory Management System that allows users to manage pr
 ## **Project Overview**
 The **InventoryMaster** system is designed to manage a store's inventory effectively. It allows the user to:
 - Add, Update, View, and Delete products.
-- Track stock levels for each product.
-- Record sales transactions and update inventory levels accordingly.
-- Generate low stock and sales reports.
 
 This application is built using **Core Java**, **JDBC**, and **PostgreSQL**.
 
@@ -31,18 +28,6 @@ This application is built using **Core Java**, **JDBC**, and **PostgreSQL**.
    - Update product details.
    - Delete products.
    - View all products.
-
-2. **Stock Management**:
-   - Track stock levels.
-   - Increase/decrease stock based on sales.
-
-3. **Sales Management**:
-   - Record sales transactions.
-   - Automatically update product stock when a sale is made.
-
-4. **Reporting**:
-   - Generate a report of products with low stock.
-   - View total sales for a specific time period.
 
 ---
 
@@ -70,9 +55,7 @@ To run the program, follow these steps:
    - **1**: Add Product
    - **2**: View Products
    - **3**: Update Product Stock
-   - **4**: Record Sale
-   - **5**: Generate Report
-   - **6**: Exit
+   - **4**: Exit
 
    Select an option by entering the corresponding number.
 
@@ -93,16 +76,6 @@ Stores details about products in the inventory.
 | `price`    | DECIMAL(10,2)| Price of the product       |
 | `quantity` | INT         | Quantity available in stock|
 
-### **2. `sales` Table**
-Records each sale made in the system.
-
-| Column        | Type        | Description                    |
-|---------------|-------------|--------------------------------|
-| `id`          | SERIAL      | Unique identifier for each sale|
-| `product_id`  | INT         | Foreign key referencing `products(id)` |
-| `quantity_sold` | INT       | Quantity of the product sold  |
-| `total_price` | DECIMAL(10,2)| Total sale price (quantity * price) |
-| `sale_date`   | TIMESTAMP   | Date and time of the sale     |
 
 ---
 
